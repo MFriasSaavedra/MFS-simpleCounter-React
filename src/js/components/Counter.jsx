@@ -4,7 +4,10 @@ const Counter = (props) => {
     return (
         <div className= "bg-dark d-flex text-white justify-content-center">
 <div className="clock mx-3">
-   <i className="fa-solid fa-clock"></i>
+    
+   <p className="card-text ">
+    <i className="fa-solid fa-clock"></i>
+    </p>
    </div>
        <div className="mx-2">{props.six}</div>
       <div className="mx-2">{props.five}</div>
@@ -13,6 +16,7 @@ const Counter = (props) => {
       <div className="mx-2">{props.two}</div>
       <div className="mx-2">{props.one}</div>
    </div>
-    )};
+    );
+};
     export default Counter;
         
