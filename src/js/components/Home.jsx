@@ -1,7 +1,4 @@
 
-
-
-
 //create your first component
 import React, {useState, useEffect} from "react";
 import Counter from "./Counter.jsx";
@@ -25,8 +22,12 @@ const Home = () => {
   const two = Math.floor(counter / 10) % 10;
   const one = counter % 10;
 
+  const reset = () =>{setCounter(0);
+
+  }
 
     return (
+      <div className="text-center">
     <Counter
         one = {one}
         two = {two}
@@ -34,7 +35,12 @@ const Home = () => {
         four = {four}
         five = {five}
         six = {six}
-    />
+        />
+
+        <button className="btn btn-danger mt-2" onClick={reset}>
+          <strong>Reiniciar</strong>
+        </button>
+        </div>
  );
 };
 
