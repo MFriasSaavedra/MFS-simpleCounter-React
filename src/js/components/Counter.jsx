@@ -2,7 +2,7 @@ import React from "react";
 
 const Counter = (props) => {
     return (
-        <div className= "bg-dark d-flex text-white justify-content-center">
+        <div className= "bg-dark d-flex text-white justify-content-center display-5">
 <div className="clock mx-3">
     
    <p className="card-text ">
